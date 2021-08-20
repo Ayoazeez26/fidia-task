@@ -10,9 +10,10 @@ module.exports = {
           text: "#3C4257",
           fb: "#D9DCE1",
           pur: "#635CFF",
-          ft: "1A1F36",
+          ft: "#1A1F36",
           acc: "#4F566B",
-          foot: "#697386"
+          foot: "#697386",
+          blu: "#5469D4"
         }
       }
     },
