@@ -1,19 +1,8 @@
 <template>
   <div id="app">
-    <Signin/>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import Signin from './components/Signin.vue'
-
-export default {
-  name: 'App',
-  components: {
-    Signin
-  }
-}
-</script>
 
 <style>
 #app {

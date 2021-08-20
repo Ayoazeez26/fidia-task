@@ -24,7 +24,7 @@
             <input class="bg-fd-pur rounded w-4 h-4" type="checkbox" name="checkbox" id="checkbox" checked>
             <label class="font-medium ml-2" for="checkbox">Stay signed in for a week</label>
           </div>
-          <button class="text-base text-white w-full bg-fd-pur py-3 flex mb-7 items-center justify-center">Continue</button>
+          <router-link to="/dashboard" class="text-base text-white w-full bg-fd-pur py-3 flex mb-7 items-center justify-center">Continue</router-link>
           <a href="#" class="text-fd-pur w-full text-center text-sm">Use single sign-on (SSO) instead</a>
         </form>
         <p class="ml-5 text-sm mb-6 text-fd-acc">Don't have an account?<a href="#" class="text-fd-pur"> Sign up</a></p>
