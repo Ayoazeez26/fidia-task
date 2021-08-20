@@ -5,7 +5,14 @@ module.exports = {
     extend: {
       colors: {
         fd: {
-          bgt: "#F7FAFC"
+          bgt: "#F7FAFC",
+          border: "#E3E8EE",
+          text: "#3C4257",
+          fb: "#D9DCE1",
+          pur: "#635CFF",
+          ft: "1A1F36",
+          acc: "#4F566B",
+          foot: "#697386"
         }
       }
     },
