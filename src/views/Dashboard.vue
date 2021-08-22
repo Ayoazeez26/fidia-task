@@ -60,13 +60,16 @@
         </div>
       </div>
     </div>
-    <div class="h-full w-4/5">
-      <div class="top-search border-b border-fd-border py-4 px-8 relative flex justify-between mb-7 items-center">
-        <img class="absolute mt-0.5 top-5 left-9" src="../assets/img/search.png" alt="search Icon">
-        <input class="ml-6 outline-none :focus:outline-none" type="text" name="search" id="search" placeholder="Search...">
-        <img src="../assets/img/Header icons.png" alt="header icons">
+    <div class="h-full overflow-x-hidden w-4/5">
+      <div class="top-search border-b border-fd-border py-4 relative flex justify-between mb-7 w-full items-center">
+        <div class="flex justify-between items-center mx-auto w-11/12">
+          <img class="absolute mt-0.5 top-5 left-12" src="../assets/img/search.png" alt="search Icon">
+          <input class="ml-6 outline-none :focus:outline-none" type="text" name="search" id="search" placeholder="Search...">
+          <img src="../assets/img/Header icons.png" alt="header icons">
+        </div>
+        
       </div>
-      <div class="dash-head flex px-8 items-center justify-between">
+      <div class="dash-head flex w-11/12 mx-auto items-center justify-between">
         <h1 class="font-bold text-3xl text-fd-ft">Payments</h1>
         <div class="buttons text-fd-text text-sm font-medium flex items-center justify-between">
           <div class="fil flex rounded bg-white items-center justify-between">
@@ -84,37 +87,39 @@
         </div>
       </div>
       <div
-        class="header relative text-sm flex justify-start font-semibold items-center mt-5 text-fd-foot border-b border-fd-border w-full"
+        class="header relative text-sm flex justify-start font-semibold items-center mx-auto mt-5 text-fd-foot border-b border-fd-border w-11/12"
       >
         <h4
           v-for="(tab, index) in tabs"
           :key="index"
-          class="cursor-pointer pb-2 px-1 ml-7 relative"
+          class="cursor-pointer pb-2 px-1 mr-4 relative"
           :class="{ activeTab: selectedTab === tab }"
           @click="selectedTab = tab"
         >
           {{ tab }}
         </h4>
       </div>
-      <div class="w-full mt-5 px-8">
-        <zk-table
-          ref="table"
-          sum-text="sum"
-          index-text="#"
-          :data="data"
-          :columns="columns"
-          :stripe="props.stripe"
-          :border="props.border"
-          :show-header="props.showHeader"
-          :show-summary="props.showSummary"
-          :show-row-hover="props.showRowHover"
-          :show-index="props.showIndex"
-          :tree-type="props.treeType"
-          :is-fold="props.isFold"
-          :expand-type="props.expandType"
-          :selection-type="props.selectionType">
-          
-        </zk-table>
+      <div class="thead border-b border-fd-border flex items-center mt-5 pb-3 mx-auto w-11/12">
+        <img class="mr-4" src="../assets/img/checkbox.png" alt="checkbox image">
+        <h5 class="text-fd-ft pl-5 w-48 font-medium uppercase">amount</h5>
+        <h5 class="text-fd-ft w-5/12 font-medium uppercase">description</h5>
+        <h5 class="text-fd-ft font-medium w-40 uppercase">customer</h5>
+        <h5 class="text-fd-ft font-medium uppercase">date</h5>
+      </div>
+      <div class="table-content mx-auto flex flex-col w-11/12">
+        <div
+          v-for="item in data"
+          :key="item.name"
+          class="tab-item border-b border-fd-border flex items-center py-2 justify-start"
+        >
+          <img class="mr-4" src="../assets/img/checkbox.png" alt="checkbox image">
+          <p class="amount font-medium w-20 text-sm">{{ item.price }}</p>
+          <p class="suc-btn rounded font-medium text-xs flex items-center">Succeeded <img class="ml-1" src="../assets/img/mark.png" alt="check mark"></p>
+          <p class="desc ml-4 w-5/12 mr-2 text-fd-acc">{{ item.desc }}</p>
+          <p class="text-fd-text w-40 text-sm">{{ item.name }}</p>
+          <p class="text-fd-text w-40 text-sm">{{ item.date }}</p>
+          <img src="../assets/img/more.png" alt="more icons">
+        </div>
       </div>
       <div class="tab-after mt-6 px-8 flex items-center justify-between">
         <p class="res text-fd-text font-normal"><span class="font-medium">16</span> results</p>
@@ -138,18 +143,6 @@ export default {
       return {
         tabs: ['All', 'Succeeded', 'Refunded', 'Uncaptured'],
         selectedTab: "Succeeded",
-        props: {
-          stripe: false,
-          border: false,
-          showHeader: true,
-          showSummary: false,
-          showRowHover: true,
-          showIndex: false,
-          treeType: true,
-          isFold: true,
-          expandType: false,
-          selectionType: true,
-        },
         data: [
           {
             price: 'US$352.22',
@@ -248,27 +241,6 @@ export default {
             date: '6 Jul, 23:08',
           },
         ],
-        columns: [
-          {
-            label: 'AMOUNT',
-            prop: 'price',
-            width: '230px',
-          },
-          {
-            label: 'DESCRIPTION',
-            prop: 'desc',
-          },
-          {
-            label: 'CUSTOMER',
-            prop: 'name',
-            width: '200px',
-          },
-          {
-            label: 'DATE',
-            prop: 'date',
-            width: '120px',
-          },
-        ],
       };
     },
     computed: {
@@ -303,5 +275,16 @@ export default {
 }
 .prev {
   opacity: 0.5;
+}
+.thead h5 {
+  font-size: 11px;
+}
+.suc-btn {
+  background-color: #CBF4C9;
+  padding: 1px 4px 1px 6px;
+  color: #0E6245;
+}
+.desc {
+  font-size: 13px;
 }
 </style>
