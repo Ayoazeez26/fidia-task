@@ -2,9 +2,9 @@
   <section class="body relative">
     <div class="top-half w-screen h-screen bg-fd-bgt">
     </div>
-    <img class="geo-img absolute " src="../assets/img/geo-patterns.png" alt="Geometric Patterns">
-    <div class="out-line absolute top-0 h-screen border-l border-r border-fd-border w-3/4">
-      <div class="board border-l border-r border-dashed border-fd-border h-full mx-auto w-1/2">
+    <img class="geo-img hidden lg:block absolute " src="../assets/img/geo-patterns.png" alt="Geometric Patterns">
+    <div class="out-line absolute top-0 h-screen border-l border-r border-fd-border w-full lg:w-3/4">
+      <div class="board border-l border-r border-dashed border-fd-border lg:h-full mx-auto w-full lg:w-1/2">
         <img class="pt-14 ml-5" src="../assets/img/logo.svg" alt="Stripe Logo">
         <form class="sign-in bg-white flex flex-col items-start mt-10 mb-8 rounded w-full text-fd-text">
           <h1 class="font-semibold text-2xl leading-relaxed">Sign in to your account</h1>
@@ -50,13 +50,19 @@ export default {
   right: 0;
   top: 31vh;
 }
-.out-line {
-  left: 12.5%;
-}
 .sign-in {
-  padding: 48px 68px 72px;
+  padding: 48px 20px 72px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12), 0px 15px 35px rgba(60, 66, 87, 0.08);
 }
+@media screen and (min-width: 768px) {
+  .out-line {
+    left: 12.5%;
+  }
+  .sign-in {
+    padding: 48px 68px 72px;
+  }
+}
+
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type=checkbox] {
     -webkit-appearance: none;
