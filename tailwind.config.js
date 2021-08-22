@@ -13,7 +13,7 @@ module.exports = {
           ft: "#1A1F36",
           acc: "#4F566B",
           foot: "#697386",
-          blu: "#5469D4"
+          blu: "#5469D4",
         }
       }
     },
