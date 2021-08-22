@@ -147,80 +147,115 @@ export default {
             date: '7 Jul, 14:04',
           },
           {
-            price: 'US$352.22',
-            desc: 'fe3d8216-58f9-4dc1-aaef-2f19463b5258',
-            name: 'hefovo87@ereyemind...',
-            date: '7 Jul, 14:04',
+            price: 'US$39.99',
+            desc: '0d7b6ac7-dbda-4157-bae9-e64749e538f5',
+            name: 'john.doe@gmail.com',
+            date: '7 Jul, 14:01',
           },
           {
-            price: 'US$352.22',
-            desc: 'fe3d8216-58f9-4dc1-aaef-2f19463b5258',
-            name: 'hefovo87@ereyemind...',
-            date: '7 Jul, 14:04',
+            price: 'US$19.99',
+            desc: 'eca84b25-0324-4f31-b9fb-d489048b77ae',
+            name: 'jfamosinhoaraca@iseo...',
+            date: '7 Jul, 13:28',
           },
           {
-            price: 'US$352.22',
-            desc: 'fe3d8216-58f9-4dc1-aaef-2f19463b5258',
-            name: 'hefovo87@ereyemind...',
-            date: '7 Jul, 14:04',
+            price: 'US$19.99',
+            desc: '9ce0027a-2429-40aa-bca3-eb9fae9829db',
+            name: 'gdontdisable@typery...',
+            date: '7 Jul, 13:02',
           },
           {
-            price: 'US$352.22',
-            desc: 'fe3d8216-58f9-4dc1-aaef-2f19463b5258',
-            name: 'hefovo87@ereyemind...',
-            date: '7 Jul, 14:04',
+            price: 'US$142.17',
+            desc: '73bb0713-d326-4983-a805-9cef0f15ff3c',
+            name: 'psir@typre.com',
+            date: '7 Jul, 12:34',
           },
           {
-            price: 'US$352.22',
-            desc: 'fe3d8216-58f9-4dc1-aaef-2f19463b5258',
-            name: 'hefovo87@ereyemind...',
-            date: '7 Jul, 14:04',
+            price: 'US$93.76',
+            desc: 'dff08e3b-037e-4fc9-a587-92850d82868e',
+            name: 'qomarkhalildubai0@g...',
+            date: '7 Jul, 12:16',
           },
           {
-            price: 'US$352.22',
-            desc: 'fe3d8216-58f9-4dc1-aaef-2f19463b5258',
-            name: 'hefovo87@ereyemind...',
-            date: '7 Jul, 14:04',
+            price: 'US$931.00',
+            desc: '3005be4a-6d4d-487c-85c3-d61cfe64ef63',
+            name: 'kfouzan.saleemc@yah...',
+            date: '7 Jul, 11:31',
           },
           {
-            price: 'US$352.22',
-            desc: 'fe3d8216-58f9-4dc1-aaef-2f19463b5258',
-            name: 'hefovo87@ereyemind...',
-            date: '7 Jul, 14:04',
+            price: 'US$19.99',
+            desc: '7e960154-e2e2-49eb-9252-edd51f421cd0',
+            name: 'asaifah@gmx.com',
+            date: '7 Jul, 11:18',
           },
           {
-            price: 'US$352.22',
-            desc: 'fe3d8216-58f9-4dc1-aaef-2f19463b5258',
-            name: 'hefovo87@ereyemind...',
-            date: '7 Jul, 14:04',
+            price: 'US$41.99',
+            desc: '88f37e63-c2b2-4c09-aa89-428fc802fe09',
+            name: '5mohamad.hamod.5m...',
+            date: '7 Jul, 10:46',
           },
           {
-            price: 'US$352.22',
-            desc: 'fe3d8216-58f9-4dc1-aaef-2f19463b5258',
-            name: 'hefovo87@ereyemind...',
-            date: '7 Jul, 14:04',
+            price: 'US$179.98',
+            desc: '5a9aae47-1d6a-484e-8305-c75107796cd1',
+            name: '7lucyveenstra918@g...',
+            date: '7 Jul, 10:12',
+          },
+          {
+            price: 'US$15.17',
+            desc: '48eb8b41-9ff0-4d5d-82cc-4b9b820b5f53',
+            name: '0sajad@yopmail.com',
+            date: '7 Jul, 06:03',
+          },
+          {
+            price: 'US$41.99',
+            desc: '02fd1b96-0bba-48aa-8557-81021755b196',
+            name: 'feverton78@gmail.com',
+            date: '6 Jul, 23:45',
+          },
+          {
+            price: 'US$67.83',
+            desc: '986bdfca-6c8d-4f40-b2ae-ed0abacccfce',
+            name: 'lsid.ali_blidi@outlook...',
+            date: '6 Jul, 23:32',
+          },
+          {
+            price: 'US$35.01',
+            desc: 'c5629140-ea34-40d8-97e4-d2986b33275e',
+            name: 'twendel.b@yahoo.com',
+            date: '6 Jul, 23:30',
+          },
+          {
+            price: 'US$374.93',
+            desc: 'c2194818-1485-437c-a389-6164e605d697',
+            name: 'pdevonneq@gmail.com',
+            date: '6 Jul, 23:16',
+          },
+          {
+            price: 'US$330.91',
+            desc: '6583691d-4d9f-43ce-8f2f-0d2d95b30ad4',
+            name: 'atotspop886@gmx.com',
+            date: '6 Jul, 23:08',
           },
         ],
         columns: [
           {
             label: 'AMOUNT',
             prop: 'price',
-            width: '200px',
+            width: '130px',
           },
           {
             label: 'DESCRIPTION',
             prop: 'desc',
-            minWidth: '500px',
           },
           {
             label: 'CUSTOMER',
             prop: 'name',
-            minWidth: '160px',
+            width: '160px',
           },
           {
             label: 'DATE',
             prop: 'date',
-            minWidth: '80px',
+            width: '120px',
           },
         ],
       };
@@ -237,6 +272,13 @@ export default {
   };
 </script>
 <style scoped>
+.zk-table__body-row {
+  height: auto !important;
+}
+.zk-table--level-1-cell {
+  font-size: 14px !important;
+  color: "#1A1F36" !important;
+}
 .buttons div {
   box-shadow: 0px 2px 5px rgba(60, 66, 87, 0.08), 0px 0px 0px 1px rgba(60, 66, 87, 0.16), 0px 1px 1px rgba(0, 0, 0, 0.12);
   padding: 6px 8px;
